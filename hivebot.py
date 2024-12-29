@@ -25,6 +25,6 @@ while True:
     for x in range(data_pool):
         comments.append(studio.comments(all=False, limit=data_pool, offset=0)[0][x]['content'])
     
-    init = f"Speak to me and act like the comments proceeding: {comments}. Make sure you're message is short. Dont use too many caps. Try not to copy other comments. Be as funny as possible. Please avoid serious topics like venting. Be as enthusiatsic and over the top. Don't be too relatable."
+    init = f"Speak to me and act like the comments proceeding: {comments}. Make sure you're message is short. Dont use too many caps. Try not to copy other comments. Be as funny as possible. Please avoid serious topics like venting. Be as enthusiatsic and over the top. Don't be too relatable." # You should probaly change this. The prompt isn't that good
     studio.post_comment(content=f"bot generated : {chatbot.chat(init)}")
     time.sleep(45)
