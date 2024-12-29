@@ -1,0 +1,2 @@
+scratchconnect==5.0
+hugchat==0.4.17
